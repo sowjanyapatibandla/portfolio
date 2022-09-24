@@ -1,0 +1,677 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #EEEEEE;
+}
+div[class="itemcontainer"] a{
+    color: inherit;
+}
+.navbar{
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    background-color: #F3F0D7;
+    display: flex;
+    height: 4vw;
+    padding: 1vw 0 0 1.7vh;
+}
+.itemcontainer{
+    margin-left: 20vw;
+    display: flex;
+    justify-items: end;
+}
+.items{
+    text-decoration: none;
+    font-size: 1vw;
+    margin-top: 1vw;
+    margin-left: 4vw;
+}
+.name{
+    font-weight: 700;
+    font-size: 2.5vw;
+    margin-left: 8vw;
+    color: #105652;
+}
+.items:hover{
+    color: #FF9B6A;
+    cursor: pointer;
+}
+.introbox{
+    display: flex;
+    font-size: 1vw;
+    width: 100%;
+    height: 33vw;
+    background-color: #105652;
+    color: white;
+}
+div[class="introbox6"] img{ 
+   position: absolute;
+   width: 30vw;
+   top: 3vw;
+   left: 55vw;
+}
+.introbox1{
+    position: relative;
+    top: 7vw;
+    left: 8vw;
+    font-weight: 500;
+    font-size: 2vw;
+    color: #F4A442;
+}
+.introbox2{
+    position: relative;
+    top: 9.5vw;
+    left: -16vw;
+    font-size: 2vw;
+    font-weight: 700;
+}
+.introbox3{
+    font-size: 1.1vw;
+    font-weight: 300;
+    position: relative;
+    top: 15vw;
+    left: -38vw;
+}
+.glowbutton{
+    border-radius: 30px;
+    text-shadow: 0 0 2vw currentColor;
+    padding: 0.9vw 0 0 0;
+    margin: 1vw 0 0 1vw;
+    position: relative;
+    top: 17vw;
+    left: -55.5vw;
+    text-align: center;
+    height: 2vw;
+    width: 9vw;
+}
+.introbox4{
+    z-index: 2;
+    background-color: #00A19D;
+    box-shadow: 0 1vw 4vw #00A19D;
+    transition: all 0.1s linear;
+    transform-origin: left top;
+}
+.introbox4:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.introbox5{
+    margin-left: 3vw;
+    background-color: hsl(33, 89%, 61%);
+    box-shadow: 0 1vw 4vw hsl(33, 89%, 61%);
+}
+.box{
+    margin: 5vw 0 0 7vw;
+    font-size: 1vw;
+    width: 85vw;
+    border-radius: 80px;
+    color: #105652;
+}
+#about{
+    position: relative;
+    padding: 3vh 0 0 1vh;
+    box-shadow: 0 0 2vw darkgray;
+    height: 38vw;
+}
+.about1{
+    font-size: 2vw;
+    font-weight: 600;
+    
+}
+.underline{
+    width: 15vw;
+    background-color: hsl(33, 89%, 61%);
+    height: 0.5vw;
+}
+.aboutcommon{
+    margin: 0 10vw 0 40vw
+}
+.about3{
+    font-size: 1.1vw;
+    margin-top: 3vw;
+    line-height: 2vw;
+    font-weight: 500;
+}
+.about4 img{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width:40vw;
+}
+.about5{
+    background-color: #fff;
+    padding: 1vw 0 0 2vw;
+    top: 29vw;
+    border-radius: 30px;
+    left: 42vw;
+    position: absolute;
+    width: 30vw;
+    height: 7vw;
+    box-shadow: 0 0 1vw darkgray;
+}
+.icons{
+    font-size: 2vw;
+    margin-left: 1vw;
+}
+#portfolio{
+    width: 80vw;
+    margin-left: 13vw;
+}
+.portfolio3>img{
+    width: 22vw;
+    margin: 2vw 0 0 2vw;
+    border-radius: 50px;
+}
+a img{
+    transition: all .2s ;
+    display: inline-block;
+    margin: 3vw 0 0 2vw;
+    width: 22vw;
+    border-radius: 50px;
+}
+.portfolio1{
+    font-size: 2vw;
+    font-weight: 600;
+    margin-left: 29vw;
+}
+.portfolio2{
+    margin-left: 29vw;
+}
+div[class="portfolio3"] img:hover{
+    scale: 1.1;
+    box-shadow: 0vw 0vw 2vw darkgray;
+}
+#resume{
+    font-weight: 600;
+}
+.resume1{
+    font-size: 2vw;
+    margin-left: 30vw;
+    font-weight: 600;
+}
+.resume2{
+    margin-left: 30vw;
+}
+.resume3{
+    margin-top: 3vw;
+    font-size: 1.4vw;
+}
+.resume4{
+    display: inline-block;
+}
+.resumeitem1{
+    margin-top: 3vw;
+    display: list-item;
+    position: relative;
+}
+.resume4 li{
+    margin-top: 3vw;
+}
+div[id="resume"]  hr{
+    width: 50vw;
+}
+.resume5{
+    margin-top: 3vw;
+    font-size: 1.4vw;
+}
+.normaltext{
+    font-size: 0.9vw;
+}
+.coursebutton{
+    text-align: center;
+    padding-top: 0.5vw;
+    color: white;
+    width: 7vw;
+    height: 2vw;
+    font-weight: 500;
+    background-color: hsl(33, 89%, 61%);
+    border-radius: 100px;
+}
+.resume6{
+    margin-top: 3vw;
+    display: list-item;
+    position: relative;
+}
+.resume6items1{
+    margin-top: 3vw;
+    font-size: 0.9vw;
+}
+.button1{
+    margin-top: 3vw;
+    position: absolute;
+    left: 40vw;
+    top: -2vw;
+}
+.button2{
+    margin-top: 3vw;
+    position: absolute;
+    left: 40vw;
+    top: -2vw;
+}
+.resume6items2{
+    margin-top: 3vw;
+    position: absolute;
+    left: 40vw;
+    top: -2vw;
+}
+.contactcontainer{
+    margin-top: 3vw;
+    width: 86vw;
+    display: flex;
+}
+.contactitem1{
+    margin-left: 35vw;
+    font-size: 2vw;
+    font-weight: 600;
+}
+.contactitem2{
+    margin-left: 35vw;
+}
+.contactbox1{
+    padding: 5vw 0 0 3vw;
+    width: 40vw;
+    height: 40vw;
+    background-color: #fff;
+}
+.contactbox2{
+    padding: 5vw 0 0 3vw;
+    width: 40vw;
+    height: 40vw;
+    background-color: #FBF3E4;
+    font-size: 1vw;
+    color: black;
+}
+#message{
+    height: 4vw;
+    width: 24.5vw;
+    padding: 1vw 0 0 0.5vw;
+    font-size: 0.9vw;
+}
+.inputbox{
+    font-size: 0.8vw;
+    width: 25vw;
+    height: 2vw;
+    border-radius: 5px;
+}
+.contactform{
+    margin-left: 4vw;
+    line-height: 2vw;
+}
+.submitbutton{
+    color: #fff;
+    font-size: 1vw;
+    width: 13vw;
+    height: 3vw;
+    border-radius: 8px;
+    background-color: #FFB740;
+}
+.formhead{
+    color: #105652;
+    font-size: 2vw;
+    font-weight: 600;
+}
+label[class="formcommon"]::after{
+    content: '*';
+    color: red;
+    margin-left: 0.5vw;
+}
+.contactbox1item1{
+    font-size: 2vw;
+    font-weight: 600;
+}
+.contactflex{
+    display: flex;
+    color: darkgray
+}
+.contactbox1item2{
+    margin-top: 3.2vw;
+}
+div[class="contactbox1item2"] i{
+    margin-top: 3vw;
+    display: block;
+}
+.contacttext{
+    margin-left: 3vw;
+    margin-top: 3vw;
+}
+.contactbox1item3{
+    margin-top: 3vw;
+}
+.contactbox1item4{
+    margin-top: 3vw;
+}
+.contactbox1item5{
+    margin-top: 3vw;
+}
+div[class="contactbox1"] p{
+    margin-top: 3vw;
+    color: black;
+}
+p a{
+    margin-left: 1vw;
+    text-decoration: none;
+    color: inherit;
+}
+.footer{
+    margin-top: 4vw;
+    width: 100%;
+    height: 3vw;
+    background-color: #F3F0D7;
+    font-size: 1.3vw;
+    color: rgb(177, 170, 170);
+    padding-top: 2vw;
+    text-align: center;
+}
+.sidebar{
+    text-align: end;
+    display: none;
+    position: absolute;
+    right: -100vw;
+    width: 90vw;
+    transition: all .5s;
+}
+.sidebar ul{
+    list-style: none;
+    font-size: 1vw;
+}
+div[class="sidebar"] a{
+    padding-right: 1vw;
+    display: block;
+    color: #105652;
+    line-height: 3vw;
+    border-top: 1px solid white;
+    border-bottom:1px solid black ;
+    background-color: #fff;
+}
+#check{
+    position: absolute;
+    z-index: -2;
+    top: -2vw;
+    margin-left: 100vw;
+    display: none;
+}
+label #btn,label #cancel{
+    display: none;
+    right: 0vw;
+    width: 10vw;
+    text-align: end;
+    position: absolute;
+    cursor: pointer;
+}
+label #btn{
+    font-size: 2vw;
+    color: black;
+    transition: all .5s;
+}
+label #cancel{
+    transition: all .5s;
+    z-index: 3;
+    right: -100vw;
+    top: 0vw;
+    font-size: 2vw;
+    color: black;
+}
+#check:checked ~ .sidebar{
+    right: -9vw;
+}
+#check:checked ~ label #btn{
+    opacity: 0;
+}
+#check:checked ~ label #cancel{
+    right: 0vw;
+}
+@media screen and (max-width: 1500px) {
+    label #btn{
+        color: #105652;
+        font-size: 5vw;
+        margin: 2vw 2vw 0 0;
+        position: fixed;
+        display: block;
+        width: 5vw;
+        z-index: 6;
+        right: 0;
+    }
+    #check:checked ~ label #btn{
+        right: 0;
+    }
+    .sidebar{
+        background-color: #fff;
+        position: fixed;
+        height: 100vh;
+        display: block;
+        text-align: start;
+        font-size: 5vw;
+        z-index: 4;
+    }
+    label #cancel{
+        color: #105652;
+        font-size: 5vw;
+        margin: 2vw 2vw 0 0;
+        display: block;
+        position: fixed;
+        z-index: 6;
+        right: -10vw;
+    }
+    .itemcontainer{
+        display: none;
+    }
+    div[class="sidebar"] ul{
+        padding-top: 10vw;
+    }
+    div[class="sidebar"] a{
+    white-space: wrap;
+    padding-top: 4vh;
+    padding-left: 3vw;
+    display: block;
+    color: #105652;
+    font-size: 3vw;
+    height: 5vh;
+    line-height: 1vw;
+    border-top: 1px solid white;
+    border-bottom:1px solid darkgray ;
+    background-color: #fff;
+    }
+    .navbar{
+        height: 10vw;
+    }
+    .name{
+        padding-top: 1vw;
+        font-size: 5vw;
+    }
+    .introbox{
+        height: 100vh;
+    }
+    .introbox1{
+        position: absolute;
+        top: 15vh;
+        left: 5vw;
+        font-size: 7vw;
+    }
+    .introbox2{
+        position: absolute;
+        top: 22vh;
+        left: 5vw;
+        font-size: 7vw;
+        font-weight: 500;
+    }
+    .introbox3{
+        position: absolute;
+        top: 35vh;
+        left: 5vw;
+        font-size: 5vw;
+    }
+    .glowbutton{
+        padding-top: 1vh;
+        height: 5vh;
+        position: absolute;
+        top: 40vh;
+        left: 5vw;
+        font-size: 3.5vw;
+        border-radius: 10px;
+    }
+    .introbox4{
+        margin: 3vw 5vw 0 0;
+        width: 33vw;
+    }
+    .introbox5{
+        left: 44vw;
+        margin: 3vw 5vw 0 0;
+        width: 33vw;
+    }
+    div[class="introbox6"] img{
+        position: absolute;
+        display: block;
+        width: 65vw;
+        height: 45vh;
+    }
+    .introbox6{
+        position: absolute;
+        top: 42.5vh;
+        left: -100vw;
+    } 
+    #about{
+        border-radius: 10px;
+        height: 100vh;
+        display: block;
+    }
+    .about1{
+        font-size: 4vw;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .underline{
+        width: 20vw;
+        font-size: 4vw;
+        margin: 0;
+        padding:0;    
+    }
+    .about3 p{
+        position: relative;
+        left: -40vw;
+        font-size: 4vw;
+        line-height: 3vh;
+        margin: 0;
+        padding: 0;
+        width: 85vw;
+        height: 20vh;
+    }
+    .about4 img{
+        width: 65vw;
+        margin-left: 7vw;
+    }
+    .about5{
+        position: absolute;
+        top: 82vh;
+        font-size: 4vw;
+        left: 10vw;
+        width: 60vw;
+        height: 20vh;
+    }
+    .about5 i{
+        margin-top: 3vh;
+        font-size: 6vw;
+    }
+    #portfolio{
+        display: none;
+    }
+    #resume{
+        display: block;
+        line-height: 5vh;
+        height: 100vh;
+        font-size: 4vw;
+    }
+    .normaltext,.resume6items1{
+        padding-bottom: 10vh;
+        font-weight: 500;
+        font-size: 3vw;
+    }
+    .coursebutton{
+        font-size: 3vw;
+        width: 25vw;
+        height: 5vh;
+    }
+    .resume1{
+        font-size: 5vw;
+    }
+    .resume2{
+        margin-left: 30vw;
+    }
+    .resume3, .resume5{
+        font-size: 4vw;
+    }
+    .button1{
+        position: absolute;
+        left: 0vw;
+        top: 8vh;
+    }
+    .button2{
+        position: absolute;
+        left: 0vw;
+        top: 8vh;
+    }
+    .resume6items2{
+        position: absolute;
+        left: 0;
+        top: 10vh;
+    }
+    .contactitem1{
+        font-size: 5vw;
+    }
+    .contactitem2{
+        margin-left: 35vw;
+        width: 28vw;
+    }
+    .contactcontainer{
+        display: block;
+        width: 90vw;
+    }
+    .contactbox1{
+        font-size: 3.5vw;
+        width: 85vw;
+        height: 60vh;
+    }
+    .contactbox1item1{
+        font-size: 5vw;
+        padding-bottom: 7vh;
+    }
+    .contactbox2{
+        width: 85vw;
+        height: 90vh;
+    }
+    .formhead{
+        font-size: 5vw;
+        padding-bottom: 7vh;
+    }
+    form[class="contactform"] label{
+        line-height: 7vh;
+        font-size: 3vw;
+        color: rgb(43, 36, 36);
+    }
+    .inputbox{
+        width: 50vw;
+        height: 5vh;
+    }
+    #message{
+        font-size: 2.5vw;
+        width: 50vw;
+        height: 10vh;
+    }
+    .submitbutton{
+        margin-top: 7vh;
+        width: 35vw;
+        height: 5vh;
+        font-size: 3.5vw;
+    }
+    .footer{
+        font-size: 3.5vw;
+        height: 5vh;
+    }
+}
